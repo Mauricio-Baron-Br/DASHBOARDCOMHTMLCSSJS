@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/all.css">
     <link rel="stylesheet" href="../plugin/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../plugin/fontawesome/css/all.min.css">
-    <title>Dashboard</title>
+    <title>Calcular IMC</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     </li>
                     <li>
                         <i class="fa-solid fa-user"></i>
-                        <a href="perfil.html"> Perfil</a>
+                        <a href="#"> Perfil</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-weight-scale"></i>
@@ -57,13 +57,27 @@
                 <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
             </header>
             <div class="main-content">
+                <div class="main-content-title">
+                    <h2>calcular IMC</h2>
+                </div>
+                <div class="panel-row">
+                    <button type="button" class="panel panel-50" a-view="cadastrarPeso" onclick="fetchContent(this)"
+                        a-folder="peso">Cadastrar
+                        Peso</button>
+                    <button type="button" class="panel panel-50" a-view="vizualizarPeso" onclick="fetchContent(this)"
+                        a-folder="peso">Vizualizar
+                        Peso</button>
+                </div>
+                <div class="content" id="ajax-content">
 
+                </div>
             </div>
         </main>
     </div>
 </body>
 <script src="../plugin/bootstrap/js/bootstrap.min.js"></script>
 <script src="../plugin/fontawesome/js/all.min.js"></script>
+<script src="../js/ajax.js"></script>
 </body>
 
 </html>
